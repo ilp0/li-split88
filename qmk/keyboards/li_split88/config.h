@@ -7,26 +7,29 @@
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x6060
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    qmkbuilder
-#define PRODUCT         keyboard
-#define DESCRIPTION     Keyboard
-
+#define MANUFACTURER    "Ilpo Loikkanen"
+#define PRODUCT         "li-split88"
+#define DESCRIPTION     "Split Keyboard"
+#define SOFT_SERIAL_PIN D3
 // CUSTOM STUFF
 
-#define MASTER_LEFT
-#define USE_I2C
+#define MASTER_LEFT 
+
 
 /* key matrix size */
 #define MATRIX_ROWS 10
 #define MATRIX_COLS 11
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { D3, D2, D4, C6, D7 }
+#define MATRIX_ROW_PINS { D0, D2, D4, C6, D7 }
 #define MATRIX_COL_PINS { E6, B4, B5, B6, B2, B3, B1, F7, F5, F6, F4}
 
-#define MATRIX_ROW_PINS_RIGHT { D3, D2, D4, D7, C6 }
-#define MATRIX_COL_PINS_RIGHT { F7, F6, B1, B3, B2, B6, B5, B4, E6 }
+#define MATRIX_ROW_PINS_RIGHT { F5, D2, D4, D7, C6 }
+//A2, 0, 4, 6, 5, 
 
+#define MATRIX_COL_PINS_RIGHT { E6, B4, B5, B6, B2, B3, B1, F6, F7}
+
+//A0, A1, 15, 14, 16, 10, 9, 8, 7
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
@@ -34,7 +37,7 @@
 
 /* number of backlight levels */
 
-#ifdef BACKLIGHT_PIN
+#ifdef BACKLIGHT_PINl
 #define BACKLIGHT_LEVELS 0
 #endif
 

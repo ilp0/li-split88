@@ -1,5 +1,7 @@
 # LI-SPLIT88
 
+![pic](./li-split88.jpg)
+
 ## Custom handwired split keyboard with iso layout. Inspired by EXT65 and Quefrency
 
 This repo contains all the project files needed to complete this build. 
